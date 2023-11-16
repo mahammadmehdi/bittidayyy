@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav id="navbar">
+
+        <div class="navbarLeft">
+            <h3>EARTH STORE</h3>
+        </div>
+        <div class="navbarRight">
+            <ul>
+                <li><a href="./home.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./shop.html">Shop</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+            </ul>
+
+            <div class="bagIcon"><i class="fa-solid fa-bag-shopping"><sup>0</sup></i></div>
+            <div class="userIcon"><i class="fa-solid fa-user"></i></div>
+            <div class="icon"><i class="fa-solid fa-bars" style="color: #ffffff;"></i></div>
+            <div class="XIcon"><i class="fa-solid fa-x" style="color: #ffffff;"></i></div>
+        </div>
+    </nav>
+    <div class="hidden">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Shop</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <div class="fixnav">
+        <div class="navHead"><span>Shopping Cart</span> <span class="exit">X</span></div>
+        <div class="main">No Products in the cart</div>
+        <div class="navFoot"><button>CONTINUE SHOPPING</button></div>
+    </div>
+
+    <section id="main">
+        <div class="container">
+            <div class="containerLeft">
+                <div class="headText"><input type="text" placeholder="Search Products...">
+                    <div class="headIcon"><i class="fa-solid fa-magnifying-glass fa-rotate-90"
+                            style="color: #ffffff;"></i></div>
+                </div>
+
+                <div class="price-filter">
+                    <label for="price-range">Filter by price</label>
+                    <div id="price-range">
+                        <input type="range" id="range-min" min="0" max="1000" step="10" value="0">
+                        <input type="range" id="range-max" min="0" max="1000" step="10" value="1000">
+                    </div>
+                    <div id="price-values">
+                        <span id="min-value">$0</span>
+                        <span id="max-value">$1000</span>
+                    </div>
+                </div>
+                <div class="foot">
+                    <h3>Categories</h3>
+                    <div class="postcard"><span class="text">Postcards</span> <span class="number">(6)</span></div>
+                    <div class="posters"><span class="text">Posters</span> <span class="number">(6)</span></div>
+                </div>
+            </div>
+            <div class="containerRight"><span class="headtext">Home/Postcards</span>
+                <h1 class="head">POSTCARDS</h1>
+                <div class="mainBox">
+                    <div class="mainText"><span class="textLeft">Showin all 6 results</span>
+                        <select id="sorting" name="sorting">
+                            <option value="Default Sorting">Default Sorting</option>
+                            <option value="Sort by popularity">Sort by popularity</option>
+                            <option value="Sort by average rating">Sort by average rating</option>
+                            <option value="Sort by latest">Sort by latest</option>
+                            <option value="Sort by price:high to low">Sort by price:high to low</option>
+                            <option value="Sort by price:low to high">Sort by price:low to high</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <div class="boxs"><img src="./assets/img/Postcard1-1000x1000.jpg" alt="">
+                            <div class="addCard"><span class="icon"><i class="fa-solid fa-bag-shopping"
+                                        style="color: #094310;"></i></span></div><span class="posters">Postcards</span>
+                            <span class="posterv">Poster V1</span> <span class="cost">$23.99</span>
+                        </div>
+                        <div class="boxs"><img src="./assets/img/PostcardV2-min-1000x1000.jpg" alt="">
+                            <div class="addCard"><span class="icon"><i class="fa-solid fa-bag-shopping"
+                                        style="color: #094310;"></i></span></div><span class="posters">Postcards</span>
+                            <span class="posterv">Poster V2</span> <span class="cost">$23.99</span>
+                        </div>
+                        <div class="boxs"><img src="./assets/img/Postcard3-1000x1000.jpg" alt="">
+                            <div class="addCard"><span class="icon"><i class="fa-solid fa-bag-shopping"
+                                        style="color: #094310;"></i></span></div><span class="posters">Postcards</span>
+                            <span class="posterv">Poster V3</span> <span class="cost">$.99</span>
+                        </div>
+                        <div class="boxs"><img src="./assets/img/Postcard-6-min-1000x1000.jpg" alt="">
+                            <div class="addCard"><span class="icon"><i class="fa-solid fa-bag-shopping"
+                                        style="color: #094310;"></i></span></div><span class="posters">Postcards</span>
+                            <span class="posterv">Poster V4</span> <span class="cost">$14.99</span>
+                        </div>
+                        <div class="boxs"><img src="./assets/img/PostcardV5-min-1000x1000.jpg" alt="">
+                            <div class="addCard"><span class="icon"><i class="fa-solid fa-bag-shopping"
+                                        style="color: #094310;"></i></span></div><span class="posters">Postcards</span>
+                            <span class="posterv">Poster V5</span> <span class="cost">$14.99</span>
+                        </div>
+                        <div class="boxs"><img src="./assets/img/PostcardV6-1000x1000.jpg" alt="">
+                            <div class="addCard"><span class="icon"><i class="fa-solid fa-bag-shopping"
+                                        style="color: #094310;"></i></span></div><span class="posters">Postcards</span>
+                            <span class="posterv">Poster V6</span> <span class="cost">$13.99</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer id="footer">
+        <div class="main">
+            <div class="nav">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Shop</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="text">EARTH STORE</div>
+            <div class="footer">Copyright © 2023 Planet Earth Store</div>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

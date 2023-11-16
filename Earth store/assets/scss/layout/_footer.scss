@@ -1,0 +1,35 @@
+#footer {
+border-top: 1px solid #585858;
+    .main {
+        display: flex;
+        justify-content: space-between;
+        padding: 3% 5% 3% 5%;
+
+       
+        ul {
+            display: flex;
+            gap: 30px;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .text {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .footer {
+            color: #585858;
+        }
+    }
+}
+@media screen and (max-width: 900px) {
+    .main {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+  }

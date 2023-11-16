@@ -1,0 +1,321 @@
+
+
+
+#card {
+    min-height: 65vh;
+    border-bottom: 1px solid #7a7a7a;
+    padding-bottom: 30px;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    
+
+    .card {
+        
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding-top: 5%;
+
+        
+
+        .cards {
+            display: flex;
+            flex-direction: column;
+            max-width: 353px;
+            min-height: 454px;
+            gap: 10px;
+            position: relative;
+
+            &:hover {
+                cursor: pointer;
+
+                .addCard {
+                    opacity: 1;
+
+                    .icon {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            
+
+            .addCard {
+                display: flex;
+                gap: 10px;
+                position: absolute;
+                right: 10px;
+                padding-top: 10px;
+
+                
+
+                .icon {
+                    position: absolute;
+                    right: 5px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    background-color: aliceblue;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    opacity: 0;
+                    transition: 300ms;
+
+
+
+
+                }
+            }
+
+            .posters {
+                color: #7a7a7a;
+            }
+
+            .posterv {
+                color: black;
+            }
+
+            .cost {
+                color: #3d4043;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+#text {
+    min-height: 50vh;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+
+    .main {
+        display: flex;
+        flex-direction: column;
+        max-width: 70%;
+        margin: auto;
+        padding-left: 3%;
+
+        h3 {
+            font-size: 35px;
+            padding-left: 3%;
+        }
+
+        .text {
+
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 50px;
+            padding-top: 5%;
+            font-size: 20px;
+            padding-left: 3%;
+
+              
+
+            .comment {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                max-width: 320px;
+                min-height: 245px;
+
+                  
+
+                .icon {
+                    font-size: 40px;
+                }
+
+                img {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+
+}
+
+#image {
+    max-width: 100%;
+
+    .main {
+        max-width: 100%;
+        margin-top: 3%;
+        background-image: url(https://websitedemos.net/earth-store-02/wp-content/uploads/sites/1171/2022/10/Banner.jpg);
+        height: 50vh;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center right;
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 50vh;
+            gap: 15px;
+
+            button {
+                background-color: #74a84a;
+                width: 187px;
+                height: 46px;
+                border: none;
+                color: white;
+                transition: 300ms;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #2c541d;
+                }
+            }
+
+            span {
+                color: #585858;
+                font-size: 17px;
+            }
+
+            h3 {
+                font-size: 41px;
+                line-height: 53px;
+            }
+        }
+
+    }
+
+    .foot {
+        max-width: 100%;
+        margin-top: 5%;
+        display: flex;
+        gap: 80px;
+        justify-content: center;
+        border-bottom: 1px solid #7a7a7a;
+        padding-bottom: 5%;
+
+        .iconText {
+            display: flex;
+            gap: 7px;
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                background-color: #2c541d;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                .span {
+                    color: #585858;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1270px) {
+    .card {
+     max-width: 90%;
+     display: flex;
+     justify-content: center;
+    }
+    
+  }
+  @media screen and (max-width: 1270px) {
+    .cards {
+     width: 300px;
+     display: flex;
+     justify-content: center;
+    }
+    
+  }
+  @media screen and (max-width: 1150px) {
+    .card {
+     max-width: 80%;
+     display: flex;
+     justify-content: center;
+    }
+  }
+
+
+  @media screen and (max-width: 1050px) {
+    .card {
+     max-width: 70%;
+     display: flex;
+     justify-content: center;
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .cards {
+     width: 270px;
+     display: flex;
+     justify-content: center;
+    }
+    
+  }
+  @media screen and (max-width: 980px) {
+    .card {
+     max-width: 60%;
+     display: flex;
+     justify-content: center;
+    }
+  }
+
+
+  @media screen and (max-width: 980px) {
+    .text {
+     display: grid !important; 
+     grid-template-columns: auto !important;
+    
+    }
+  }
+  @media screen and (max-width: 980px) {
+    .card {
+     display: flex !important; 
+     flex-direction: column !important;
+     align-items: center;
+    
+    }
+  }
+  @media screen and (max-width: 1200px) {
+    body {
+ max-width: 1200px;
+    
+    }
+  }
+  @media screen and (max-width: 980px) {
+    .text {
+     display: flex !important; 
+     flex-direction: column !important;
+     align-items: center;
+     gap: 20px;
+    
+    }
+  }
+//   @media screen and (max-width: 960px) {
+//     .foot {
+//      display: flex !important; 
+//      align-items: center;
+//      gap: 20px;
+    
+//     }
+//   }
+  @media screen and (max-width: 980px) {
+    .foot {
+     display: flex !important;
+     flex-direction: column !important; 
+     align-items: center;
+     gap: 20px;
+    
+    }
+  }
+
